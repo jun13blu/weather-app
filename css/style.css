@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    /*background: url("http://68.media.tumblr.com/dba8930c075bf505728df757c37b4216/tumblr_oh8awjk7lA1qze3hdo1_r1_500.gif") no-repeat center center fixed;*/
+    /*background: url("http://68.media.tumblr.com/09c6d90170076846bdb19de05e08a8ca/tumblr_ol3lldvM801qze3hdo1_r1_500.gif") no-repeat center center fixed;*/
+    /*background: url("http://68.media.tumblr.com/4c1313fb62311980f738c18fe9d27dac/tumblr_noa6mdd3yb1qze3hdo1_r2_500.gif") no-repeat center center fixed;*/
+    /*background: url("http://68.media.tumblr.com/4e0e28821627a1e566134edef9b0b20b/tumblr_nm6j1ghB7C1qze3hdo1_500.gif") no-repeat center center fixed;*/
+    /*background: url("http://68.media.tumblr.com/74f3a108bc59636cc3e48cbd005216d8/tumblr_n9m262J4Lq1qze3hdo1_r2_500.gif") no-repeat center center fixed;*/
+    /*background: url("http://68.media.tumblr.com/734ba6db5941cd39f175f61ccf33b980/tumblr_nmvrs6ubl71qze3hdo1_r1_500.gif") no-repeat center center fixed;*/
+    /*background: url("http://68.media.tumblr.com/16dee2fb087bcacd529b9c455f145ca8/tumblr_n9zgffvOOr1qze3hdo2_r1_500.gif") no-repeat center center fixed;*/
+    /*background: url("http://68.media.tumblr.com/063481f87ba3058c8bb235148df090b9/tumblr_nb8zykBVPC1qze3hdo1_r1_500.gif") no-repeat center center fixed;*/
+    /*background: url("http://68.media.tumblr.com/a1971a640a7c31496b83b4368b7af2d3/tumblr_oa5kbyhVQh1qze3hdo1_500.gif") no-repeat center center fixed;*/
+    background: url("http://68.media.tumblr.com/2469a3bffe4c8c97f9a34768db55a1eb/tumblr_noy6woQBtr1qze3hdo1_r2_500.gif") no-repeat center center fixed;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.weather-widget {
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+}
+
+h1, h2, h3 {
+    padding: 15px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    display: inline-block;
+}
+
+.unit {
+    display: inline-block;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0.6em;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7em;
+    padding: 2px;
+    margin: 0;
+    background: none;
+    width: 7em;
+    border: none;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
