@@ -6,36 +6,28 @@
 
 body {
     height: 100%;
-    /*background: url("http://68.media.tumblr.com/dba8930c075bf505728df757c37b4216/tumblr_oh8awjk7lA1qze3hdo1_r1_500.gif") no-repeat center center fixed;*/
-    /*background: url("http://68.media.tumblr.com/09c6d90170076846bdb19de05e08a8ca/tumblr_ol3lldvM801qze3hdo1_r1_500.gif") no-repeat center center fixed;*/
-    /*background: url("http://68.media.tumblr.com/4c1313fb62311980f738c18fe9d27dac/tumblr_noa6mdd3yb1qze3hdo1_r2_500.gif") no-repeat center center fixed;*/
-    /*background: url("http://68.media.tumblr.com/4e0e28821627a1e566134edef9b0b20b/tumblr_nm6j1ghB7C1qze3hdo1_500.gif") no-repeat center center fixed;*/
-    /*background: url("http://68.media.tumblr.com/74f3a108bc59636cc3e48cbd005216d8/tumblr_n9m262J4Lq1qze3hdo1_r2_500.gif") no-repeat center center fixed;*/
-    /*background: url("http://68.media.tumblr.com/734ba6db5941cd39f175f61ccf33b980/tumblr_nmvrs6ubl71qze3hdo1_r1_500.gif") no-repeat center center fixed;*/
-    /*background: url("http://68.media.tumblr.com/16dee2fb087bcacd529b9c455f145ca8/tumblr_n9zgffvOOr1qze3hdo2_r1_500.gif") no-repeat center center fixed;*/
-    /*background: url("http://68.media.tumblr.com/063481f87ba3058c8bb235148df090b9/tumblr_nb8zykBVPC1qze3hdo1_r1_500.gif") no-repeat center center fixed;*/
-    /*background: url("http://68.media.tumblr.com/a1971a640a7c31496b83b4368b7af2d3/tumblr_oa5kbyhVQh1qze3hdo1_500.gif") no-repeat center center fixed;*/
     background: url("http://68.media.tumblr.com/2469a3bffe4c8c97f9a34768db55a1eb/tumblr_noy6woQBtr1qze3hdo1_r2_500.gif") no-repeat center center fixed;
     background-size: cover;
     image-rendering: pixelated;
+    transition: background 1s;
 }
 
 .weather-widget {
     text-align: center;
-    padding: 4em;
+    padding: 3em;
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 100px 60px rgba(0, 0, 0, 0.4);
     border-radius: 2em;
 }
 
 h1, h2, h3 {
     padding: 15px;
-    color: white;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.85);;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
 h1 {
@@ -54,21 +46,61 @@ h3 {
     display: inline-block;
 }
 
-.unit {
+.switch {
+    position: relative;
     display: inline-block;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     border-radius: 0.6em;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);*/
 }
 
-button {
+.switch span {
     font-family: 'Raleway', sans-serif;
     font-size: 0.7em;
     padding: 2px;
     margin: 0;
-    background: none;
     width: 7em;
-    border: none;
     color: white;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.switch span.selected {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.switch input {
+    display: none;
+}
+
+#slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    border-radius: 0.6em;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+}
+
+#slider:before {
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 50%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 0.6em;
+    z-index: -10;
+}
+
+input:checked + #slider:before {
+    left: 50%;
 }

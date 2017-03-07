@@ -8,14 +8,22 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
+        <div class="bg"><span> </span></div>
         <div class="weather-widget">
-            <h1>City</h1>
-            <h2>Temperature</h2>
-            <h3>Condition</h3>
-            <div class="unit">
-                <button type="button">Celcius</button>
-                <button type="button">Fahrenheit</button>
-            </div>
+            <h1>Loading...</h1>
+            <h2></h2>
+            <h3></h3>
+            <label class="switch">
+                <input type="checkbox">
+                <div id="slider"></div>
+                <div class="unit">
+                    <span class="selected">Fahrenheit</span>
+                    <span>Celcius</span>
+                </div>
+            </label>
         </div>
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/primary.js"></script>
     </body>
 </html>
