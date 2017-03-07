@@ -5,7 +5,7 @@ $(function(){
         var $h1 = $weather.find("h1");
         var $h2 = $weather.find("h2");
         var $h3 = $weather.find("h3");
-        var $bg = $("body");
+        var $bg = $("html");
         var $slider = $weather.find(".switch");
 
         //variables

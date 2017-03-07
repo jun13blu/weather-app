@@ -4,8 +4,9 @@
     margin: 0;
 }
 
-body {
-    height: 100%;
+html {
+    min-height: 100%;
+    min-width: 100%;
     background: url("http://68.media.tumblr.com/2469a3bffe4c8c97f9a34768db55a1eb/tumblr_noy6woQBtr1qze3hdo1_r2_500.gif") no-repeat center center fixed;
     background-size: cover;
     image-rendering: pixelated;
